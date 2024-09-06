@@ -69,3 +69,10 @@ customer_slug=sachin
 
 ![Postman](generatetn_postman.png)
 
+### Public URL
+
+Currently, its deployed to EC2
+
+Here is the url:
+
+http://3.93.175.178/api/tracking_numbers/generate-tn
