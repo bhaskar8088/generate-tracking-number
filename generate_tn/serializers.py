@@ -45,7 +45,9 @@ class GenerateTrackingNumberSerializer(serializers.ModelSerializer):
                 validated_data['tracking_no'] = tracking_no
                 return super().create(validated_data)
 
-        raise serializers.ValidationError("Unable to generate a unique tracking number after 10 attempts.")
+        raise serializers.ValidationError("Unable to generate a unique tracking number.")
 
     def generate_unique_tracking_number(self):
-        return ''.join(random.choices(string.ascii_uppercase + string.digits, k=16))
+        return self.validated_data['origin_country_id'] + \
+            self.validated_data['destination_country_id'] + \
+            ''.join(random.choices(string.ascii_uppercase + string.digits, k=12))
