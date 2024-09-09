@@ -5,7 +5,7 @@ This project implements a RESTful API using Django REST Framework to generate un
 ## Features
 
 - Generates unique tracking numbers that match the regex pattern `^[A-Z0-9]{1,16}$`
-- Ensures no duplicate tracking numbers are generated. Our system will try to generate a unique tracking number 10 times and if it cannot, it will cancel. This means that, we need to generate tracking number in such a way that it will be unique with 1 or 2 attempts.
+- Ensures no duplicate tracking numbers are generated.
 - Validates input fields using Django Rest Framework serializers
 - API optimized for scalability and high concurrency
 
