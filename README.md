@@ -52,6 +52,7 @@ GET http://localhost:8000/api/tracking_numbers/generate-tn/ in postman with the 
 origin_country_id
 destination_country_id
 weight
+customer_id
 customer_name
 customer_slug
 
@@ -60,6 +61,7 @@ customer_slug
 origin_country_id=IN
 destination_country_id=SG
 weight=2
+customer_id=62954f05-a05e-4b53-aabd-f35663e6e507
 customer_name=sachin
 customer_slug=sachin
 

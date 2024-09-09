@@ -14,7 +14,7 @@ class TrackingNumber(BaseModel):
     origin_country_id = models.CharField(max_length=2)
     destination_country_id = models.CharField(max_length=2)
     weight = models.DecimalField(max_digits=6, decimal_places=3)
-    customer_id = models.UUIDField(default=uuid.uuid4, editable=False)
+    customer_id = models.UUIDField()
     customer_name = models.CharField(max_length=255)
     customer_slug = models.SlugField(max_length=255)
     
